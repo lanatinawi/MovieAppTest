@@ -1,9 +1,110 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+//importing 
+import React from "react";
+import { Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+//import { SafeAreaViewComponent } from "react-native"; //avoid displaying text in notch
+//import { Icon } from '@rneui/themed';
+//import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'; //icons
+
+function Feed() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Recent Content/Newsfeed (Placeholder)
+      </Text>
+    </View>
+  );
+}
+
+function ProfilePage() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Profile Page: (Will contain user's watched movies & movies interest in watching. Editing )</Text>
+    </View>
+  );
+}
+
+function FriendsPage() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Friends Page/ Add Friends Section</Text>
+    </View>
+  );
+}
+
+function SettingsPage() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Friends Page/ Add Friends Section</Text>
+    </View>
+  );
+}
+
+
+//creating the tab navigator
+const Tab = createBottomTabNavigator();
+
+function MyTabs() {
+  return (
+    <Tab.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        tabBarActiveTintColor: '#0818A8',
+      }}
+      
+    >
+    
+      <Tab.Screen
+        name="News Feed"
+        component={Feed}
+        options={{
+          tabBarLabel: 'News Feed',
+          
+         
+        }}
+      />
+      <Tab.Screen
+        name="Friends"
+        component={FriendsPage}
+        options={{
+          tabBarLabel: 'Friends',
+         
+        }}
+      />
+  
+      <Tab.Screen
+        name="Profile"
+        component={ProfilePage}
+        options={{
+          tabBarLabel: 'Profile',
+         
+        }}
+      />
+
+      <Tab.Screen
+              name="Settings"
+              component={SettingsPage}
+              options={{
+                tabBarLabel: 'Settings',
+              
+              }}
+              />
+      
+    </Tab.Navigator>
+  );
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <MyTabs />
+    </NavigationContainer>
+  );
+}
+
+
+/*
+// OG code from react-native project initialization
 
 import React from 'react';
 import type {PropsWithChildren} from 'react';
@@ -78,7 +179,7 @@ function App(): JSX.Element {
           }}>
           <Section title="Step One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
+            screen and then come back to see your edits. This is edited to see what happens. test. test.test.x5
           </Section>
           <Section title="See Your Changes">
             <ReloadInstructions />
@@ -116,3 +217,4 @@ const styles = StyleSheet.create({
 });
 
 export default App;
+*/
