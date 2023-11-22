@@ -1,12 +1,10 @@
-//Code: styles for bottom navigation bar
-/*
 import { StyleSheet } from 'react-native'; //importing stylesheet
+///import { Icon } from 'react-native-vector-icons/Icon'; // add in case you add nav bar stuff in here
 
-const styles = StyleSheet.create({
-    headerText: {
-      fontFamily: 'Cochin',
-      fontWeight: 'bold',
-      fontSize: 50,
-    }
-    })
-  export default styles;*/
+// this screen if for the nav bar styling
+const styles = StyleSheet.create({ 
+  
+  
+});
+
+ 
