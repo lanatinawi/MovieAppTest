@@ -4,6 +4,9 @@ import { Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/Ionicons";
+//import Home from './src/Home';
+// import Constants from './src/Constants'
+
 
 
 //Currently unused libraries/imports
@@ -108,4 +111,15 @@ export default function App() {
     </NavigationContainer>
   );
 }
+
+// const headerStyle = {
+//   title: 'The Movie App',
+//   headerStyle: {backgroundColor:Constants.baseColor},
+//   headerTitleStyle:{color: Constants.textColor },
+//   // headerLeft: () => <Icon name="menu" size={28} 
+//   // color={Constants.textColor}/>,
+//   headerRight: () => <Icon name="search" size={28} 
+//   color={Constants.textColor}/>
+
+// };
 
