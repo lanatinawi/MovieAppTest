@@ -10,7 +10,7 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 
 //Currently unused libraries/imports
-import styles from "./StyleSheets/navstyles.js"; 
+//import styles from "./StyleSheets/navstyles.js"; 
 //import { SafeAreaViewComponent } from "react-native"; //avoid displaying text in notch
 
 
@@ -49,7 +49,8 @@ function MyTabs() {
           tabBarIcon: ({ color, size }) => (
              <Icon name="newspaper" size={30} color="#000" /> // Change the color
             ),
-        }}
+        }
+      }
 
       />
       <Tab.Screen
